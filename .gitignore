@@ -2,7 +2,8 @@
 node_modules/
 /.pnp
 /coverage
-/build
+build/
+.cache/
 css/
 dist/
 dist-ssr/
