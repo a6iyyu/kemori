@@ -1,4 +1,4 @@
-import stylesheet from "./styles/tailwind.css";
+import stylesheet from "./styles/global.css";
 import type { LinksFunction } from "@remix-run/node";
 import {
   Links,
