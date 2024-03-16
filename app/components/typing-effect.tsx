@@ -28,11 +28,6 @@ export const TypingEffect: React.FC = () => {
       color: "red",
     },
   ];
-
-  const [currentText, setCurrentText] = useState<string>(words[0].name);
-  const [index, setIndex] = useState<number>(0);
-  const [backspace, setBackspace] = useState<boolean>(false);
-
   useEffect(() => {});
 
   return null;
