@@ -26,9 +26,6 @@
   img::selection {
     background: none;
   }
-  p {
-    transition: all 0.3s ease-in-out;
-  }
   body {
     display: block;
     overflow-x: hidden;
