@@ -12,6 +12,10 @@
   font-family: "Inter", "DM Sans", "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+html {
+  scroll-padding: 2rem;
+}
+
 @media screen and (max-width: 8192px) {
   body {
     display: none;
@@ -30,6 +34,33 @@
     display: block;
     overflow-x: hidden;
     background-color: #1c1c1c;
+  }
+  #narrative-icon {
+    margin: 2rem 0 0 4.35rem;
+  }
+}
+
+@media screen and (max-width: 2080px) {
+  #narrative-icon {
+    margin: 2rem 0 0 3.25rem;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  #narrative-icon {
+    margin: 2rem 0 0 2.875rem;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  #narrative-icon {
+    margin: 2.5rem 0 0 2.35rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #narrative-icon {
+    margin: 2.5rem 0 0 2rem;
   }
 }
 

@@ -2,13 +2,8 @@ import React from "react";
 import { Link } from "@remix-run/react";
 import { Dropdown } from "./dropdown";
 
-interface MenuItem {
-  name: string;
-  id: string;
-}
-
 export const Header: React.FC = () => {
-  const menus: MenuItem[] = [
+  const menus: { name: string; id: string }[] = [
     {
       name: "About",
       id: "about-button",
@@ -26,6 +21,7 @@ export const Header: React.FC = () => {
       id: "tools-button",
     },
   ];
+
   return (
     <header className="h-40 w-4/5 flex justify-between mx-auto">
       <section className="h-full w-1/3 md:w-1/5 flex items-center justify-start">
@@ -38,6 +34,7 @@ export const Header: React.FC = () => {
         {menus.map((menu) => (
           <h5
             key={menu.id}
+            id={menu.id}
             className="cursor-pointer font-semibold text-gray-50 hover:text-gray-200 hover:underline transition-all duration-300 ease-in-out"
           >
             {menu.name}
