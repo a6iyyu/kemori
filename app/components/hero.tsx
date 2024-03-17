@@ -1,22 +1,23 @@
 import React from "react";
-// import { TypingEffect } from "./typing-effect";
+import { TypingEffect } from "./typing-effect";
 
 export const Hero: React.FC = () => {
   return (
-    <main className="h-fit w-4/5 flex items-center justify-between mb-24 mt-16 mx-auto">
-      <section className="h-full w-2/5 my-20">
-        <h3 className="cursor-default font-semibold text-5xl flex items-center justify-start">
-          <span className="text-yellow-400">Best</span>
+    <main className="h-fit w-4/5 flex flex-col-reverse xl:flex-row items-center justify-between mb-24 mt-16 mx-auto">
+      <section className="h-full w-full xl:w-1/2 mt-12 xl:mx-0 mx-auto xl:my-auto">
+        <h3 className="cursor-default font-semibold flex items-center xl:justify-start justify-center text-center xl:text-5xl text-4xl xl:text-left">
+          <p className="text-yellow-400">Best</p>
           &nbsp;
-          <span className="text-gray-50">downloader</span>
+          <p className="text-gray-50">downloader</p>
           &nbsp;
-          <span className="text-blue-400">tool</span>
+          <p className="text-blue-400">tool</p>
         </h3>
-        <p className="cursor-default font-semibold text-5xl text-green-400">
-          for
+        <p className="cursor-default font-semibold xl:text-5xl text-4xl text-center xl:text-left text-green-400">
+          for &nbsp;
+          <TypingEffect />
         </p>
       </section>
-      <section className="h-full w-2/5 grid place-items-center">
+      <section className="h-full w-full xl:w-2/5 grid place-items-center">
         <img
           src="/hero-downloading.png"
           alt="Downloading"

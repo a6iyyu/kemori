@@ -30,10 +30,6 @@ const App = () => {
         <Scripts />
         <LiveReload />
       </body>
-      <script
-        type="text/javascript"
-        src="https://unpkg.com/aos@next/dist/aos.js"
-      ></script>
     </html>
   );
 };

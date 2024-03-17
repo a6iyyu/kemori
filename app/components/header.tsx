@@ -44,7 +44,7 @@ export const Header: React.FC = () => {
           </h5>
         ))}
       </nav>
-      <section className="h-full w-2/5 md:w-1/5 flex items-center justify-end">
+      <section className="h-full w-1/2 md:w-1/5 flex items-center justify-end">
         <Dropdown />
       </section>
     </header>

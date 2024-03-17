@@ -24,6 +24,7 @@ const language: Languages[] = [
 
 export const Dropdown: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
+  const [selectedLanguage, setSelectedLanguage] = useState<string>(language[0].language);
   const dropdown = useRef<HTMLDivElement>(null);
 
   const HandleClick = (e: MouseEvent) => {
@@ -47,11 +48,11 @@ export const Dropdown: React.FC = () => {
       onClick={DropdownClick}
     >
       <img
-        src={language[0].image}
-        alt={language[0].alt}
-        className="h-6 w-6 rounded-full mr-2"
+        src={language.find((lang) => lang.language === selectedLanguage)?.image}
+        alt={language.find((lang) => lang.alt === selectedLanguage)?.alt}
+        className="h-6 w-6 rounded-full mr-3"
       />
-      <h5>{language[0].language}</h5>
+      <h5>{selectedLanguage || language[0].language}</h5>
       {open && (
         <div
           ref={dropdown}
@@ -60,13 +61,13 @@ export const Dropdown: React.FC = () => {
           {language.map((lang) => (
             <div
               key={lang.id}
-              className="cursor-pointer flex px-7 py-4 hover:rounded-xl hover:bg-gray-300"
-              onClick={() => lang.language}
+              className="cursor-pointer flex px-7 py-4 rounded-xl hover:bg-gray-300 transition-all duration-500 ease-in-out"
+              onClick={() => setSelectedLanguage(lang.language)}
             >
               <img
                 src={lang.image}
                 alt={lang.alt}
-                className="h-6 w-6 rounded-full mr-2"
+                className="h-6 w-6 rounded-full mr-3.5"
               />
               <span>{lang.language}</span>
             </div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ScrollToTopImage from "../../public/scroll-to-top.png";
 
 export const ScrollToTop: React.FC = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -22,12 +23,16 @@ export const ScrollToTop: React.FC = () => {
   });
   return (
     <div
-      className={`h-[4.5rem] w-[4.5rem] lg:h-24 lg:w-24 grid place-items-center rounded-full bg-gray-50 hover:bg-gray-200 fixed cursor-pointer bottom-8 right-8 transition-all duration-300 ease-in-out ${
-        showScroll ? "visible opacity-100" : "invisible opacity-0"
-      }`}
+      className={`h-20 w-20 lg:h-24 lg:w-24 grid place-items-center rounded-full bg-gray-50 hover:bg-gray-200 fixed cursor-pointer bottom-8 right-8 transition-all duration-300 ease-in-out
+        ${showScroll ? "visible opacity-100" : "invisible opacity-0"}
+      `}
       onClick={scrollToTop}
     >
-      <img src="" alt="" className="w-5 lg:w-6 text-gray-50 font-semibold" />
+      <img
+        src={ScrollToTopImage}
+        alt="Scroll"
+        className="w-12 lg:w-16 text-gray-950 font-semibold"
+      />
     </div>
   );
 };
