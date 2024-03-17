@@ -1,34 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 export const TypingEffect: React.FC = () => {
-  const words: { id: number; name: string; color: string }[] = [
-    {
-      id: 1,
-      name: "Anywhere",
-      color: "red",
-    },
-    {
-      id: 2,
-      name: "Facebook",
-      color: "blue",
-    },
-    {
-      id: 3,
-      name: "Instagram",
-      color: "brown",
-    },
-    {
-      id: 4,
-      name: "Twitter",
-      color: "blue",
-    },
-    {
-      id: 5,
-      name: "YouTube",
-      color: "red",
-    },
-  ];
-  useEffect(() => {});
+  const TypingEffect = useRef<HTMLParagraphElement>(null);
 
-  return null;
+  useEffect(() => {
+    if (TypingEffect.current) {
+      for (let i = 0; i < TypingEffect.current.children.length; i++) {
+        TypingEffect.current.children[0].classList.add("text-in");
+      }
+    }
+  }, []);
+
+  return (
+    <p
+      ref={TypingEffect}
+      className="cursor-default font-semibold xl:text-5xl text-4xl text-center xl:text-left text-green-400"
+      id="animate-text"
+    >
+      from&nbsp;
+      <span className="text-slate-500">Anywhere</span>
+      <span className="text-blue-500">Facebook</span>
+      <span className="text-amber-600">Instagram</span>
+      <span className="text-red-600">YouTube</span>
+      <span className="text-cyan-600">Shortener</span>
+    </p>
+  );
 };

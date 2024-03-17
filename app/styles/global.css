@@ -38,6 +38,9 @@ html {
   #narrative-icon {
     margin: 2rem 0 0 4.35rem;
   }
+  #animate-text :not(.text-in) {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 2080px) {
@@ -61,6 +64,54 @@ html {
 @media screen and (max-width: 1440px) {
   #narrative-icon {
     margin: 2.5rem 0 0 2rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #narrative-icon {
+    margin: 2.5rem 0 0 5.75rem;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  #narrative-icon {
+    margin: 2.5rem 0 0 5.125rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #narrative-icon {
+    margin: 2.5rem 0 0 4.125rem;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  #narrative-icon {
+    margin: 2.5rem 0 0 3.625rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #narrative-icon {
+    margin: 2.5rem 0 0 3.25rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #narrative-icon {
+    margin: 2.5rem 0 0 2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #narrative-icon {
+    margin: 2.5rem 0 0 2.125rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #narrative-icon {
+    margin: 2.5rem 0 0 1.5rem;
   }
 }
 

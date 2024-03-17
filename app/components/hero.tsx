@@ -12,10 +12,19 @@ export const Hero: React.FC = () => {
           &nbsp;
           <p className="text-blue-400">tool</p>
         </h3>
-        <p className="cursor-default font-semibold xl:text-5xl text-4xl text-center xl:text-left text-green-400">
-          for &nbsp;
-          <TypingEffect />
-        </p>
+        <TypingEffect />
+        <br />
+        <div className="h-fit w-full xl:w-1/2 flex items-center justify-center xl:justify-start">
+          <button
+            className="h-fit w-fit bg-gradient-to-tr bg-slate-100 hover:bg-slate-300 text-gray-950 px-8 py-4 font-black text-base rounded-xl"
+            style={{
+              boxShadow: "0 0 1rem #bcbcbc50",
+              transition: "all 300ms ease-in-out",
+            }}
+          >
+            GET TO KNOW
+          </button>
+        </div>
       </section>
       <section className="h-full w-full xl:w-2/5 grid place-items-center">
         <img
