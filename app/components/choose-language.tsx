@@ -1,28 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
+import { language } from "~/types/languages";
 
-interface Languages {
-  id: number;
-  image: string;
-  language: string;
-  alt: string;
-}
-
-const language: Languages[] = [
-  {
-    id: 1,
-    image: "/english.webp",
-    language: "EN",
-    alt: "EN",
-  },
-  {
-    id: 2,
-    image: "/indonesia.png",
-    language: "ID",
-    alt: "ID",
-  },
-];
-
-export const Dropdown: React.FC = () => {
+export const ChooseLanguage: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
   const [selectedLanguage, setSelectedLanguage] = useState<string>(language[0].language);
   const dropdown = useRef<HTMLDivElement>(null);

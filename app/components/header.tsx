@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "@remix-run/react";
-import { Dropdown } from "./dropdown";
+import { ChooseLanguage } from "./choose-language";
 
 export const Header: React.FC = () => {
   const menus: { name: string; id: string }[] = [
@@ -42,7 +42,7 @@ export const Header: React.FC = () => {
         ))}
       </nav>
       <section className="h-full w-1/2 md:w-1/5 flex items-center justify-end">
-        <Dropdown />
+        <ChooseLanguage />
       </section>
     </header>
   );
