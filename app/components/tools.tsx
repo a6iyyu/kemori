@@ -32,7 +32,7 @@ export const Tools: React.FC = () => {
             className="h-[26rem] md:h-[22rem] xl:h-[25rem] w-full xl:w-[90%] grid place-items-center bg-gradient-to-tl from-slate-50 via-slate-200 to-slate-100 rounded-3xl"
             style={{ boxShadow: "0 0 1.25rem #bcbcbc99" }}
           >
-            <div className="h-[85%] xl:h-3/4 w-[85%] xl:w-4/5 flex flex-col items-start justify-start">
+            <div className="h-4/5 xl:h-3/4 w-[85%] xl:w-4/5 flex flex-col items-start justify-start">
               <img src={menu.image} alt={menu.alt} width={menu.width} />
               <p className="text-lg cursor-default font-semibold mt-4">
                 {menu.title}
@@ -42,7 +42,7 @@ export const Tools: React.FC = () => {
               </p>
               <Link
                 to={menu.link}
-                className="text-md font-medium text-gray-950 hover:text-gray-700 text-justify mt-2.5 hover:underline transition-all duration-300 ease-in-out"
+                className="text-md font-semibold text-gray-950 hover:text-gray-700 text-justify mt-2.5 hover:underline transition-all duration-300 ease-in-out"
               >
                 See more
               </Link>
