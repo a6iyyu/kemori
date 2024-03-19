@@ -1,5 +1,6 @@
 import React from "react";
 import { TypingEffect } from "./typing-effect";
+import { GetToKnow } from "./get-to-know";
 
 export const Hero: React.FC = () => {
   return (
@@ -15,15 +16,7 @@ export const Hero: React.FC = () => {
         <TypingEffect />
         <br />
         <div className="h-fit w-full xl:w-1/2 flex items-center justify-center xl:justify-start">
-          <button
-            className="h-fit w-fit bg-gradient-to-tr bg-slate-100 hover:bg-slate-300 text-gray-950 px-8 py-4 font-black text-base rounded-xl"
-            style={{
-              boxShadow: "0 0 1rem #bcbcbc50",
-              transition: "all 300ms ease-in-out",
-            }}
-          >
-            GET TO KNOW
-          </button>
+          <GetToKnow />
         </div>
       </section>
       <section className="h-full w-full xl:w-2/5 grid place-items-center">

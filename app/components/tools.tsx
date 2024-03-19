@@ -24,14 +24,15 @@ export const Tools: React.FC = () => {
         <br className="hidden lg:flex" />
         interface and responsive customer service.
       </section>
-      <section className="h-fit w-4/5 grid place-items-center justify-between gap-y-10 grid-cols-1 lg:grid-cols-2 grid-rows-4 lg:grid-rows-2 mt-8 mx-auto">
+      <section className="h-fit w-4/5 grid place-items-center justify-between gap-y-10 grid-cols-1 xl:grid-cols-2 grid-rows-4 xl:grid-rows-2 mt-8 mx-auto">
         {menus.map((menu) => (
           <div
             key={menu.id}
-            className="h-[23rem] md:h-72 xl:h-80 w-full xl:w-[90%] grid place-items-center bg-gradient-to-tl from-slate-50 via-slate-200 to-slate-100 rounded-3xl"
+            id="tools"
+            className="h-[26rem] md:h-[22rem] xl:h-[25rem] w-full xl:w-[90%] grid place-items-center bg-gradient-to-tl from-slate-50 via-slate-200 to-slate-100 rounded-3xl"
             style={{ boxShadow: "0 0 1.25rem #bcbcbc99" }}
           >
-            <div className="h-3/4 w-[85%] xl:w-4/5 flex flex-col items-start justify-start">
+            <div className="h-[85%] xl:h-3/4 w-[85%] xl:w-4/5 flex flex-col items-start justify-start">
               <img src={menu.image} alt={menu.alt} width={menu.width} />
               <p className="text-lg cursor-default font-semibold mt-4">
                 {menu.title}

@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { XDownloaderPage } from "~/pages/x-downloader";
 import "~/styles/global.css";
 
 export const meta: MetaFunction = () => {
@@ -14,7 +15,7 @@ export const meta: MetaFunction = () => {
 };
 
 const XDownloader = () => {
-  return null;
+  return <XDownloaderPage />;
 };
 
 export default XDownloader;

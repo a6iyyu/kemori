@@ -14,7 +14,7 @@ export const menus: MenuItem[] = [
     image: "/facebook.svg",
     alt: "Facebook",
     title: "Facebook Downloader",
-    description: "",
+    description: "With one click, you can save interesting Facebook videos quickly and easily to watch anytime, anywhere. We offer convenience, speed and privacy without annoying ads. Just copy and paste the video link and enjoy your video collection in various formats and qualities.",
     link: "/facebook-downloader",
     width: 40,
   },

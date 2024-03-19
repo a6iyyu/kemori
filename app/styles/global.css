@@ -74,10 +74,14 @@ html {
   #how-it-works {
     height: 26rem;
   }
+  #tools {
+    height: 27rem;
+  }
 }
 
 @media screen and (max-width: 360px) {
-  #how-it-works {
+  #how-it-works,
+  #tools {
     height: 30rem;
   }
 }

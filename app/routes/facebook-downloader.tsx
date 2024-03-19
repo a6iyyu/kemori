@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { FacebookDownloaderPage } from "~/pages/facebook-downloader";
 import "~/styles/global.css";
 
 export const meta: MetaFunction = () => {
@@ -14,7 +15,7 @@ export const meta: MetaFunction = () => {
 };
 
 const FacebookDownloader = () => {
-  return null;
+  return <FacebookDownloaderPage />;
 };
 
 export default FacebookDownloader;

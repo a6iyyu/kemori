@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { URLShortenerPage } from "~/pages/url-shortener";
 import "~/styles/global.css";
 
 export const meta: MetaFunction = () => {
@@ -14,7 +15,7 @@ export const meta: MetaFunction = () => {
 };
 
 const URLShortener = () => {
-  return null;
+  return <URLShortenerPage />;
 };
 
 export default URLShortener;
