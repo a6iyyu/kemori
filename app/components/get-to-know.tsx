@@ -41,12 +41,12 @@ export const GetToKnow: React.FC = () => {
   useEffect(() => {
     document.addEventListener("click", HandleClickDropdown);
     return () => document.removeEventListener("click", HandleClickDropdown);
-  });
+  }, []);
 
   return (
     <>
       <button
-        className="h-fit w-fit bg-slate-100 hover:bg-slate-300 text-gray-950 px-8 py-4 font-black text-base rounded-xl"
+        className="h-fit w-fit rounded-xl bg-slate-100 px-8 py-4 text-base font-black text-gray-950 hover:bg-slate-300"
         style={{
           boxShadow: "0 0 1rem #bcbcbc50",
           transition: "all 300ms ease-in-out",
@@ -57,11 +57,12 @@ export const GetToKnow: React.FC = () => {
         GET TO KNOW
       </button>
       {open && (
-        <div className="absolute h-fit w-fit bg-gradient-to-tr from-slate-200 via-slate-50 to-slate-100 top-[48rem] xl:top-[31rem] rounded-xl">
+        <div className="absolute top-[48rem] h-fit w-fit rounded-xl bg-gradient-to-tr from-slate-200 via-slate-50 to-slate-100 xl:top-[31rem]">
           {DropdownMenu.map((dropdown) => (
             <Link
               to={dropdown.link}
-              className="grid place-items-center px-6 py-5 font-semibold text-gray-950 hover:bg-slate-300 rounded-xl transition-all duration-300 ease-in-out"
+              className="grid place-items-center rounded-xl px-6 py-5 font-semibold text-gray-950 transition-all duration-300 ease-in-out hover:bg-slate-300"
+              data-aos={open ? "fade-up" : "fade-up"}
             >
               {dropdown.title}
             </Link>

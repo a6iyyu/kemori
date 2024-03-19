@@ -4,9 +4,9 @@ import { GetToKnow } from "./get-to-know";
 
 export const Hero: React.FC = () => {
   return (
-    <main className="h-fit w-4/5 flex flex-col-reverse xl:flex-row items-center justify-between mb-24 mt-16 mx-auto">
-      <section className="h-full w-full xl:w-1/2 mt-12 xl:mx-0 mx-auto xl:my-auto">
-        <h3 className="cursor-default font-semibold flex items-center xl:justify-start justify-center text-center xl:text-5xl text-4xl xl:text-left">
+    <main className="mx-auto mb-24 mt-16 flex h-fit w-4/5 flex-col-reverse items-center justify-between xl:flex-row">
+      <section className="mx-auto mt-12 h-full w-full xl:mx-0 xl:my-auto xl:w-1/2">
+        <h3 className="flex cursor-default items-center justify-center text-center text-4xl font-semibold xl:justify-start xl:text-left xl:text-5xl">
           <p className="text-yellow-400">Best</p>
           &nbsp;
           <p className="text-gray-50">downloader</p>
@@ -15,15 +15,15 @@ export const Hero: React.FC = () => {
         </h3>
         <TypingEffect />
         <br />
-        <div className="h-fit w-full xl:w-1/2 flex items-center justify-center xl:justify-start">
+        <div className="flex h-fit w-full items-center justify-center xl:w-1/2 xl:justify-start">
           <GetToKnow />
         </div>
       </section>
-      <section className="h-full w-full xl:w-2/5 grid place-items-center">
+      <section className="grid h-full w-full place-items-center xl:w-2/5">
         <img
           src="/hero-downloading.png"
           alt="Downloading"
-          className="font-semibold text-xl"
+          className="text-xl font-semibold"
         />
       </section>
     </main>

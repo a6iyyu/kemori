@@ -8,7 +8,8 @@ export const meta: MetaFunction = () => {
     },
     {
       name: "description",
-      content: "Unfortunately, the page you are looking for is not available in Kemori.",
+      content:
+        "Unfortunately, the page you are looking for is not available in Kemori.",
     },
   ];
 };

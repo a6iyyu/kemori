@@ -23,25 +23,25 @@ export const Header: React.FC = () => {
   ];
 
   return (
-    <header className="h-40 w-4/5 flex justify-between mx-auto">
-      <section className="h-full w-1/3 md:w-1/5 flex items-center justify-start">
+    <header className="mx-auto flex h-40 w-4/5 justify-between">
+      <section className="flex h-full w-1/3 items-center justify-start md:w-1/5">
         <Link to="/" className="h-fit w-fit">
           {/* <img src="" alt="Logo" className="text-gray-50 font-semibold" /> */}
-          <h2 className="font-semibold text-2xl text-gray-50">KEMORI</h2>
+          <h2 className="text-2xl font-semibold text-gray-50">KEMORI</h2>
         </Link>
       </section>
-      <nav className="h-full w-3/5 hidden md:flex md:items-center md:justify-evenly drop-shadow-xl">
+      <nav className="hidden h-full w-3/5 drop-shadow-xl md:flex md:items-center md:justify-evenly">
         {menus.map((menu) => (
           <h5
             key={menu.id}
             id={menu.id}
-            className="cursor-pointer font-semibold text-gray-50 hover:text-gray-200 hover:underline transition-all duration-300 ease-in-out"
+            className="cursor-pointer font-semibold text-gray-50 transition-all duration-300 ease-in-out hover:text-gray-200 hover:underline"
           >
             {menu.name}
           </h5>
         ))}
       </nav>
-      <section className="h-full w-1/2 md:w-1/5 flex items-center justify-end">
+      <section className="flex h-full w-1/2 items-center justify-end md:w-1/5">
         <ChooseLanguage />
       </section>
     </header>

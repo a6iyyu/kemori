@@ -15,7 +15,7 @@ export const ScrollIndicator: React.FC = () => {
   });
   return (
     <div
-      className="h-1 fixed z-[999] bg-slate-50"
+      className="fixed z-[999] h-1 bg-slate-50"
       style={{ width: `${scrollPercentage}%` }}
     ></div>
   );

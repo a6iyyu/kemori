@@ -14,7 +14,7 @@ export const TypingEffect: React.FC = () => {
   return (
     <p
       ref={TypingEffect}
-      className="cursor-default font-semibold xl:text-5xl text-4xl text-center xl:text-left text-green-400"
+      className="cursor-default text-center text-4xl font-semibold text-green-400 xl:text-left xl:text-5xl"
       id="animate-text"
     >
       from&nbsp;
