@@ -26,6 +26,16 @@ export const HomePage: React.FC = () => {
         });
       });
     }
+
+    const FAQButton = document.getElementById("faq-button") as HTMLElement;
+    const FAQSection = document.getElementById("faq-section") as HTMLElement;
+    if (FAQButton && FAQSection) {
+      FAQButton.addEventListener("click", () => {
+        FAQSection.scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    }
   }, []);
 
   return (

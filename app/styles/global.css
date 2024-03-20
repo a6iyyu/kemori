@@ -38,6 +38,9 @@ html {
   #animate-text :not(.text-in) {
     display: none;
   }
+  #menu-dropdown {
+    top: 34.5rem;
+  }
 }
 
 @media screen and (max-width: 2080px) {
@@ -47,12 +50,21 @@ html {
 }
 
 @media screen and (max-width: 1680px) {
+  #menu-dropdown {
+    top: 33rem;
+  }
 }
 
 @media screen and (max-width: 1440px) {
+  #menu-dropdown {
+    top: 31rem;
+  }
 }
 
 @media screen and (max-width: 1280px) {
+  #menu-dropdown {
+    top: 56rem;
+  }
 }
 
 @media screen and (max-width: 1160px) {
@@ -65,9 +77,15 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+  #menu-dropdown {
+    top: 55rem;
+  }
 }
 
 @media screen and (max-width: 640px) {
+  #menu-dropdown {
+    top: 49rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -77,12 +95,18 @@ html {
   #tools {
     height: 28rem;
   }
+  #menu-dropdown {
+    top: 46rem;
+  }
 }
 
 @media screen and (max-width: 360px) {
   #how-it-works,
   #tools {
     height: 31rem;
+  }
+  #menu-dropdown {
+    top: 42rem;
   }
 }
 

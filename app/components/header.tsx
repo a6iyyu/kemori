@@ -13,10 +13,6 @@ export const Header: React.FC = () => {
       id: "faq-button",
     },
     {
-      name: "How It Works",
-      id: "how-it-works-button",
-    },
-    {
       name: "Tools",
       id: "tools-button",
     },

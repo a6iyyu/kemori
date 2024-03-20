@@ -54,10 +54,13 @@ export const GetToKnow: React.FC = () => {
         ref={dropdown}
         onClick={HandleDropdownMenus}
       >
-        GET TO KNOW
+        GET TO KNOW&nbsp;&nbsp;&#10132;
       </button>
       {open && (
-        <div className="absolute top-[48rem] h-fit w-fit rounded-xl bg-gradient-to-tr from-slate-200 via-slate-50 to-slate-100 xl:top-[31rem]">
+        <div
+          className="absolute h-fit w-fit rounded-xl bg-gradient-to-tr from-slate-200 via-slate-50 to-slate-100"
+          id="menu-dropdown"
+        >
           {DropdownMenu.map((dropdown) => (
             <Link
               to={dropdown.link}
